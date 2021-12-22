@@ -20,9 +20,12 @@ import epub_writer
 colorama.init(autoreset=True)
 
 # Setup Selenium Webdriver
-CHROMEDRIVER_PATH = r"./driver/chromedriver.exe"
+CHROMEDRIVER_PATH = r"chromedriver"
 options = Options()
 options.headless = True
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
 # Disable Warning, Error and Info logs
 # Show only fatal errors
 options.add_argument("--log-level=3")
