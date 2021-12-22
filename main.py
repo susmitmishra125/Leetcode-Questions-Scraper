@@ -122,11 +122,11 @@ def main():
 
              # Sleep for 20 secs for each problem and 2 minns after every 30 problems
              if i % 30 == 0:
-                 print(f"Sleeping 120 secs\n")
-                 time.sleep(120)
-             else:
-                 print(f"Sleeping 20 secs\n")
+                 print(f"Sleeping 5 secs\n")
                  time.sleep(5)
+             else:
+                 print(f"Sleeping 2 secs\n")
+                 time.sleep(2)
 
     finally:
         # Close the browser after download
